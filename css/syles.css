@@ -1,0 +1,161 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Georgia;
+}
+
+#navbar{
+  display: flex;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 2px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ulnavbar{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover{
+    color:#37a1f7;
+  }
+}
+
+#container{
+  display: flex;
+  padding: 2rem 2.5rem;
+  margin: 0 auto;
+  gap: 3rem;
+  max-width: 1200px;
+}
+
+#mainContainer{
+  flex: 3 1 0;
+}
+
+.post{
+  img{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .title{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  .title:hover{
+    color:#37a1f7;
+  }
+  .description{
+    margin-bottom: 1rem;
+  }
+  .author{
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .more{
+    text-decoration: none;
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+  }
+}
+
+aside{
+  flex: 1 1 0;
+  section{
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  h3{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+#categoriesContainer{
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+  }
+  a:hover{
+    color:#37a1f7;
+  }
+  li{
+    margin-bottom: 1rem;
+  }
+}
+
+#tagsUl{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+  }
+  a:hover{
+    color:#37a1f7;
+  }
+  li{
+    margin-bottom: 1rem;
+    background-color: #ddd;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+    margin: 0;
+  }
+}
+
+#inputContainer{
+  display: flex;
+}
+
+#searchInput{
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+}
+
+#searchBtn{
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+article{
+  margin-bottom: 2.5rem;
+}
+
+footer{
+  border-top: 2px solid #ddd;
+  padding: 3rem;
+  text-align: center;
+  h2{
+    margin-bottom: 1rem;
+  }
+  p{
+    margin-bottom: 1rem;
+  }
+}
+
+@media(max-width:450px){
+  
+  #container{
+    flex-wrap: wrap;
+  }
+
+  
+}
